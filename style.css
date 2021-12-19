@@ -1,0 +1,260 @@
+:root{
+    --blue: #08415C;
+    --red: #CC2936;
+    --golden: #B88B4A;
+    --sand: #DDCA7D;
+}
+
+/* CSS Reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Font styling */
+h1, h3, p, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: var(--red);
+    font-weight: 800;
+}
+
+h3{
+    color: var(--blue);
+}
+
+figcaption{
+    color: grey;
+    font-size: small;
+    padding-left: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    max-width: 1980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/corn.jpg);
+    background-size: cover;
+}
+
+.wrapper{
+    background-color: white;
+    position: relative;
+}
+
+
+/* HEADER ---------------------------------------------------------- */
+.header{
+    display: block;
+    height: 10rem;
+    background-color: var(--blue);
+    margin: auto;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 1rem;
+}
+
+
+
+
+
+/* NAVBAR ---------------------------------------------------------------- */
+.navbar{
+    background-color: var(--sand);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 6rem;
+    text-decoration: none;
+    
+}
+
+.navbar li{
+    color: var(--red);
+    width: 50%;
+    padding: 0.8rem;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+/* Font størrelse og farve. Fjerner  underscore på link. Skal åbenbart target "a" */
+li a{
+    text-decoration: none;
+    color: var(--red);
+    font-size: larger;
+}
+
+/* Lidt hover effekt */
+.navbar-li:hover{
+    background-color: beige;
+    transition-duration: 0.4s;
+
+}
+
+
+ 
+
+/* MAIN --------------------------------------------------------------- */
+.produkt-serie-h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.produkt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 22rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.produkt p{
+    max-width: 70%;
+    text-align: center;
+}
+
+.section2 h1{
+    text-align: center;
+}
+
+.opskrift-bageskole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 22rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.opskrift-bageskole p{
+    max-width: 70%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* FOOTER --------------------------------- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    height: 9rem;
+    align-items: center; 
+}
+
+.social-icons{
+    display: flex;
+}
+
+.social-icons img{
+    border: solid red 1px;
+    margin: 1rem;
+}
+
+.footer-end{
+    height: 2rem;
+    background-color: var(--sand);
+}
+
+
+
+
+/* ´+++++++++++++++ Første brød side */
+
+.broed-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250rem;
+    text-align: left;
+}
+
+.broed-section p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.opskrift-links{
+    text-align: center;
+}
+
+
+
+
+
+
+/* Dropdown test --------------------------------------------- */
+@media only screen and (min-width: 960px) {
+ 
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 3rem;
+        justify-content: flex-end;
+        
+    }
+    
+    .navbar li{
+        width: 15%;
+    }
+
+    .logo{
+        margin-left: 2rem;
+    }
+
+    .produkt-serie{
+        display: flex;
+    }
+
+    .produkt{
+        width: 33%;
+    }
+
+    .section2{
+        display: flex;
+    }
+
+    .opskrift-bageskole{
+        width: 50%;
+    }
+
+
+    .broed-section{
+        height: 200rem;
+    }
+
+    .broed-section p{
+        max-width: 50%;
+        
+    }
+
+    .opskrift-links{
+        display: flex;
+        width: 70%;
+        max-width: 50rem;
+        justify-content: space-between;
+    }
+  }
